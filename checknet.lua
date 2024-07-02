@@ -24,6 +24,8 @@ local devices = Netmon:detect_devices()
 
 local monitored = {}
 
+local has_hotspot = false
+
 -- add monitored devices
 for _, dev in ipairs(devices) do
 	local desc = dev:get_description()
@@ -38,8 +40,14 @@ for _, dev in ipairs(devices) do
 		local rtl_spec = desc:match("RTL[0-9]+")
 
 		if rtl_spec == "RTL8192" then -- we use an rtl8192 device for the hotspot
-			devtype = "hotspot"
-			Debug.writeln("hotspot detected")
+			if not has_hotspot then
+				devtype = "hotspot"
+				Debug.writeln("hotspot detected")
+				has_hotspot = true
+			else
+				devtype = "wifi"
+				Debug.writeln("wifi detected")
+			end
 		end
 
 		if not rtl_spec then -- if not a realtek device then use as wifi iface
@@ -48,10 +56,11 @@ for _, dev in ipairs(devices) do
 	end
 
 	-- exclude lo, p2p etc
-	if devtype == "ethernet" or devtype == "hotspot" or devtype == "wifi" then
+	--if devtype == "ethernet" or devtype == "hotspot" or devtype == "wifi" then
 	--if devtype == "hotspot" or devtype == "wifi" then
 	--if devtype == "hotspot" then
-	--if devtype == "ethernet" then
+
+	if devtype == "ethernet" or devtype == "hotspot" or devtype == "wifi" then
 		local monitored_device = Netmon:create(dev:get_iface(), log, devtype)
 
 		monitored_device:monitor()
