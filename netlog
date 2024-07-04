@@ -1,0 +1,24 @@
+======================
+NETLOG @ Tue Jul  2 11:31:54 2024
+======================
+@ Tue Jul  2 11:31:54 2024 --> logger attached succesfully
+@ Tue Jul  2 11:31:54 2024 --> logger attached succesfully
+@ Tue Jul  2 11:31:54 2024 --> logger attached succesfully
+@ Tue Jul  2 11:32:03 2024 --> IN CHECKING UP ENP2S0| Dev state: DISCONNECTED
+@ Tue Jul  2 11:32:03 2024 --> IN CHECKING UP WLP0S26U1U2| Dev state: DISCONNECTED
+@ Tue Jul  2 11:32:03 2024 --> IN CHECKING UP WLP0S29U1U1| Dev state: DISCONNECTED
+@ Tue Jul  2 11:32:03 2024 --> IN CALLBACK FROM ENP2S0| starting
+@ Tue Jul  2 11:32:03 2024 --> IN CALLBACK FROM ENP2S0| The connection profile has been successfully added to NetworkManager:
+@ Tue Jul  2 11:32:03 2024 --> IN CALLBACK FROM ENP2S0| wired, 50c55369-56c1-42b6-af14-90fa5f5723fd
+@ Tue Jul  2 11:32:03 2024 --> IN CONN CALLBACK| /org/freedesktop/NetworkManager/ActiveConnection/11: (ACTIVATING)
+@ Tue Jul  2 11:32:03 2024 --> IN CALLBACK FROM WLP0S26U1U2| starting
+@ Tue Jul  2 11:32:03 2024 --> IN CALLBACK FROM WLP0S26U1U2| The connection profile has been successfully added to NetworkManager:
+@ Tue Jul  2 11:32:03 2024 --> IN CALLBACK FROM WLP0S26U1U2| Hotspot-MY501, 23367d26-91c7-4469-8960-effcf4f37ad8
+@ Tue Jul  2 11:32:03 2024 --> IN CONN CALLBACK| /org/freedesktop/NetworkManager/ActiveConnection/12: (ACTIVATING)
+@ Tue Jul  2 11:32:03 2024 --> IN CALLBACK FROM WLP0S29U1U1| starting
+@ Tue Jul  2 11:32:03 2024 --> IN CALLBACK FROM WLP0S29U1U1| The connection profile has been successfully added to NetworkManager:
+@ Tue Jul  2 11:32:03 2024 --> IN CALLBACK FROM WLP0S29U1U1| OFICINA, 9ea6fa57-ccd6-4844-8b93-0ed48abde3d8
+@ Tue Jul  2 11:32:03 2024 --> IN CONN CALLBACK| /org/freedesktop/NetworkManager/ActiveConnection/13: (ACTIVATING)
+@ Tue Jul  2 11:32:11 2024 --> IN CHECKING UP ENP2S0| Dev state: ACTIVATED
+@ Tue Jul  2 11:32:11 2024 --> IN CHECKING UP WLP0S26U1U2| Dev state: ACTIVATED
+@ Tue Jul  2 11:32:11 2024 --> IN CHECKING UP WLP0S29U1U1| Dev state: ACTIVATED

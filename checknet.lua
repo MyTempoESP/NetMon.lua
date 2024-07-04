@@ -53,6 +53,15 @@ for _, dev in ipairs(devices) do
 		if not rtl_spec then -- if not a realtek device then use as wifi iface
 			devtype = "wifi"
 		end
+	
+	local has_config = false
+	local config_file = ""
+
+	if devtype == "ethernet" then
+		if desc:match("Boardband") then
+			config_file = "/root/MyTempo/conf/boardband.conf"
+			has_config = true
+		end
 	end
 
 	-- exclude lo, p2p etc
@@ -61,7 +70,14 @@ for _, dev in ipairs(devices) do
 	--if devtype == "hotspot" then
 
 	if devtype == "ethernet" or devtype == "hotspot" or devtype == "wifi" then
-		local monitored_device = Netmon:create(dev:get_iface(), log, devtype)
+		local monitored_device = nil
+		if not has_config then
+			monitored_device = Netmon:create(dev:get_iface(), log, devtype)
+		end
+
+		if has_config then
+			monitored_device = Netmon:create(dev:get_iface(), log, devtype, config_file)
+		end
 
 		monitored_device:monitor()
 		table.insert(monitored, monitored_device)

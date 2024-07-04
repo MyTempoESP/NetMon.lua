@@ -8,7 +8,7 @@ local GLib = lgi.require("GLib")
 local Netlog = require("netlog")
 
 -- needed for AF_INET (why doesn't NetworkManager define this?)
-local socket = require("socket")
+-- local socket = require("socket")
 
 --[[ workaround
 function sleep(sec)
