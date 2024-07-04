@@ -53,6 +53,7 @@ for _, dev in ipairs(devices) do
 		if not rtl_spec then -- if not a realtek device then use as wifi iface
 			devtype = "wifi"
 		end
+	end
 	
 	local has_config = false
 	local config_file = ""
