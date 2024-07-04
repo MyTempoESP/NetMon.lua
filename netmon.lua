@@ -129,26 +129,24 @@ function Netmon:_create_conn(name, devtype, network_name, password)
 	if devtype == "wired" or devtype == "ethernet" then
 		self._tmp_conn:add_setting(NetworkManager.SettingWired.new())
 
-		local setting_ipv4 = NetworkManager.SettingIP4Config.new()
-		--local setting_ipv6 = NetworkManager.SettingIP6Config.new()
-
-		self.debugger.writeln("\27[36;1m================SETTING ETHERNET IP================")
-		self.debugger.writeln(string.format("IP ADDR -> %s", self.ip))
-		self.debugger.writeln("===================================================\27[0m")
-
-		--setting_ipv6[NetworkManager.SETTING_IP_CONFIG_METHOD] = NetworkManager.SETTING_IP6_CONFIG_METHOD_DISABLED
-
 		if self.ip then
+			local setting_ipv4 = NetworkManager.SettingIP4Config.new()
+			--local setting_ipv6 = NetworkManager.SettingIP6Config.new()
+
+			self.debugger.writeln("\27[36;1m================SETTING ETHERNET IP================")
+			self.debugger.writeln(string.format("IP ADDR -> %s", self.ip))
+			self.debugger.writeln("===================================================\27[0m")
+
+			--setting_ipv6[NetworkManager.SETTING_IP_CONFIG_METHOD] = NetworkManager.SETTING_IP6_CONFIG_METHOD_DISABLED
+
 			setting_ipv4[NetworkManager.SETTING_IP_CONFIG_METHOD] = NetworkManager.SETTING_IP4_CONFIG_METHOD_MANUAL
 
 			-- 2 IS AF_INET WHT IS GETTING AF_INET SO ANNOYING
 			local ipv4 = NetworkManager.IPAddress.new(2, self.ip, 8)
 			setting_ipv4:add_address(ipv4)
+
+			self._tmp_conn:add_setting(setting_ipv4)
 		end
-
-		self._tmp_conn:add_setting(setting_ipv4)
-
-		--self._tmp_conn:add_setting(setting_ipv6)
 
 		return self._tmp_conn
 	end
