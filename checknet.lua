@@ -59,7 +59,8 @@ for _, dev in ipairs(devices) do
 	local config_file = ""
 
 	if devtype == "ethernet" then
-		if desc:match("Boardband") then
+		if desc:match("Boardband") or desc:match("Qualcomm Android") then
+			Debug.writeln("Boardband 4G detected")
 			config_file = "/root/MyTempo/conf/boardband.conf"
 			has_config = true
 		end

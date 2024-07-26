@@ -1,0 +1,39 @@
+======================
+NETLOG @ Fri Jul 26 12:40:13 2024
+======================
+@ Fri Jul 26 12:40:13 2024 --> logger attached succesfully
+@ Fri Jul 26 12:40:13 2024 --> logger attached succesfully
+@ Fri Jul 26 12:40:13 2024 --> logger attached succesfully
+@ Fri Jul 26 12:40:13 2024 --> logger attached succesfully
+@ Fri Jul 26 12:40:21 2024 --> IN CHECKING UP ENP2S0| Dev state: DISCONNECTED
+@ Fri Jul 26 12:40:21 2024 --> IN CHECKING UP WLP1S0| Dev state: DISCONNECTED
+@ Fri Jul 26 12:40:21 2024 --> IN CHECKING UP WLP0S21F0U3| Dev state: DISCONNECTED
+@ Fri Jul 26 12:40:21 2024 --> IN CHECKING UP ENP0S21F0U1U4| Dev state: DISCONNECTED
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM ENP2S0| starting
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM ENP2S0| The connection profile has been successfully added to NetworkManager:
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM ENP2S0| wired, 09220126-8ca1-4a08-9352-db9550bdc81f
+@ Fri Jul 26 12:40:21 2024 --> IN CONN CALLBACK| /org/freedesktop/NetworkManager/ActiveConnection/12: (ACTIVATING)
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM WLP1S0| starting
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM WLP1S0| The connection profile has been successfully added to NetworkManager:
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM WLP1S0| OFICINA, ef96e982-6138-4ae6-a4dc-311da20bbede
+@ Fri Jul 26 12:40:21 2024 --> IN CONN CALLBACK| /org/freedesktop/NetworkManager/ActiveConnection/13: (ACTIVATING)
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM WLP0S21F0U3| starting
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM WLP0S21F0U3| The connection profile has been successfully added to NetworkManager:
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM WLP0S21F0U3| Portal-my702, 72b8de92-2ec9-40ec-b692-e1e9df185cb6
+@ Fri Jul 26 12:40:21 2024 --> IN CONN CALLBACK| /org/freedesktop/NetworkManager/ActiveConnection/14: (ACTIVATING)
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM ENP0S21F0U1U4| starting
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM ENP0S21F0U1U4| The connection profile has been successfully added to NetworkManager:
+@ Fri Jul 26 12:40:21 2024 --> IN CALLBACK FROM ENP0S21F0U1U4| wired, e22d9ce9-f381-4c88-9bd4-3850d36d1634
+@ Fri Jul 26 12:40:21 2024 --> IN CONN CALLBACK| /org/freedesktop/NetworkManager/ActiveConnection/15: (ACTIVATING)
+@ Fri Jul 26 12:40:29 2024 --> IN CHECKING UP ENP2S0| Dev state: ACTIVATED
+@ Fri Jul 26 12:40:29 2024 --> IN CHECKING UP WLP1S0| Dev state: ACTIVATED
+@ Fri Jul 26 12:40:29 2024 --> IN CHECKING UP WLP0S21F0U3| Dev state: ACTIVATED
+@ Fri Jul 26 12:40:29 2024 --> IN CHECKING UP ENP0S21F0U1U4| Dev state: ACTIVATED
+@ Fri Jul 26 12:40:37 2024 --> IN CHECKING UP ENP2S0| Dev state: ACTIVATED
+@ Fri Jul 26 12:40:37 2024 --> IN CHECKING UP WLP1S0| Dev state: ACTIVATED
+@ Fri Jul 26 12:40:37 2024 --> IN CHECKING UP WLP0S21F0U3| Dev state: ACTIVATED
+@ Fri Jul 26 12:40:37 2024 --> IN CHECKING UP ENP0S21F0U1U4| Dev state: ACTIVATED
+@ Fri Jul 26 12:40:45 2024 --> IN CHECKING UP ENP2S0| Dev state: ACTIVATED
+@ Fri Jul 26 12:40:45 2024 --> IN CHECKING UP WLP1S0| Dev state: ACTIVATED
+@ Fri Jul 26 12:40:45 2024 --> IN CHECKING UP WLP0S21F0U3| Dev state: ACTIVATED
+@ Fri Jul 26 12:40:45 2024 --> IN CHECKING UP ENP0S21F0U1U4| Dev state: ACTIVATED
